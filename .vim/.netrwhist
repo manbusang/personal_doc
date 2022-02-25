@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/huichao/.vim'
+let g:netrw_dirhist_3='/home/huichao/.vim/autoload'
+let g:netrw_dirhist_2='/home/huichao/.vim'
+let g:netrw_dirhist_1='/home/huichao/.vim/autoload'
+let g:netrw_dirhist_0='/home/huichao/.vim'
+let g:netrw_dirhist_9='/home/huichao/.vim/autoload'
+let g:netrw_dirhist_8='/home/huichao/.vim'
+let g:netrw_dirhist_7='/home/huichao/.vim/autoload'
+let g:netrw_dirhist_6='/home/huichao/.vim'
+let g:netrw_dirhist_5='/mnt/data/huichao/os_framework3/os/drivers/lxdrv/libs/liblx/src/net'
