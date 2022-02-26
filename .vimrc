@@ -1,4 +1,3 @@
-let Tlist_Exit_OnlyWindow=1
 set ignorecase
 syntax on 
 set cursorline "color the editing line 
@@ -10,8 +9,9 @@ set cindent
 set smartindent
 set number
 set relativenumber
-"set hlsearch
-
+set hlsearch
+"remap es key to clear highlight search 
+nnoremap <F3> :noh<CR>
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
