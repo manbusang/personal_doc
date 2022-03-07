@@ -8,10 +8,11 @@ set autoindent
 set cindent
 set smartindent
 set number
-set relativenumber
+"set relativenumber
 set hlsearch
-"remap es key to clear highlight search 
-nnoremap <F3> :noh<CR>
+
+nnoremap <C-a> ^
+nnoremap <esc><esc> :noh<return>
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -22,6 +23,8 @@ Plug 'ajmwagar/vim-deus'
 Plug 'sheerun/vim-polyglot'
 Plug 'skywind3000/vim-auto-popmenu'
 Plug 'skywind3000/vim-dict'
+Plug 'preservim/nerdcommenter'
+"Plug 'jlanzarotta/bufexplorer'
 "Plug 'humiaozuzu/tabbar'
 "Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 "Plug 'neoclide/coc.nvim'
@@ -72,6 +75,7 @@ noremap <F2> :LeaderfFunction!<cr>
 " <leader> = \
 noremap <C-m> :Leaderf mru<cr>
 noremap <C-b> :Leaderf buffer<cr>
+noremap <C-g> :Leaderf gtags --update<cr>
 noremap <C-]> :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
 
 
@@ -96,3 +100,13 @@ set completeopt=menu,menuone,noselect
 set shortmess+=c
 
 "====tabbar test ========
+"==== buf explorer ========
+"let g:bufExplorerDefaultHelp=0       " Do not show default help.
+"let g:bufExplorerShowRelativePath=1  " Show relative paths.
+"let g:bufExplorerSortBy='mru'        " Sort by most recently used.
+"let g:bufExplorerSplitRight=1        " Split left.
+"let g:bufExplorerUseCurrentWindow=1  " Open in new window.
+"let g:bufExplorerDisableDefaultKeyMapping =0 " Do not disable default key mappings.
+"==== leader commenter ========
+:map <C-z> <plug>NERDCommenterToggle
+let g:NERDCustomDelimiters = { 'c': { 'left': '//'} }
