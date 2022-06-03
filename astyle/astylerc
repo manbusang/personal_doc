@@ -1,0 +1,27 @@
+#
+# Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+#
+# SPDX-License-Identifier: BSD-2-Clause
+#
+
+max-instatement-indent=120
+#style=otbs
+style=linux
+pad-header
+indent=spaces=4
+attach-closing-while
+pad-oper
+pad-comma
+unpad-paren
+align-pointer=name
+#remove-braces
+suffix=none
+indent-switches
+keep-one-line-statements
+keep-one-line-blocks
+attach-return-type
+convert-tabs
+min-conditional-indent=0
+max-code-length=150
+max-continuation-indent=120
+
