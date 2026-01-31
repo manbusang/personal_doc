@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant H as Hypervisor
     participant V as VM
@@ -15,3 +16,4 @@ sequenceDiagram
         H->>H: 触发强制重置逻辑
         Note right of H: 记录错误日志
     end
+```
